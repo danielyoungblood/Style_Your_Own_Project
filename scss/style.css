@@ -1,16 +1,11 @@
-  @import "utilities";
-  @import "config";
-  @import "btnConfig";
-
 h1 {
-  @include center_text;
-  font: $header_style;
+  text-align: center;
+  font: 50px Arial, sans-serif;
 }
 
 div {
-  @include center_text;
+  text-align: center;
 }
-
 
 button {
   margin: 10px;
@@ -19,7 +14,7 @@ button {
 #results,
 #scores {
   border: 2px;
-  background-color: $background_color;
+  background-color: aqua;
   border-color: black;
   border-style: solid;
   border-radius: 10px;
@@ -30,21 +25,21 @@ button {
   display: inline-block;
   align-items: center;
   justify-content: center;
-  background-color: $background_color;
-  color: $color_white;
-  padding: $image_button_padding;
-  border: $nothing;
+  background-color: aqua;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: $box_shadow;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .image-button:hover {
-  background-color: $background_color_hover;
+  background-color: yellow;
 }
 
 .image-button:active {
-  box-shadow: $nothing;
+  box-shadow: none;
 }
 
 .image-button img {
@@ -54,18 +49,18 @@ button {
 
 #user,
 #user_score {
-  margin-right: $margin_area;
-  padding-bottom: $padding_area;
+  margin-right: 50px;
+  padding-bottom: 50px;
 }
 
 #computer,
 #computer_score {
-  margin-left: $margin_area;
+  margin-left: 50px;
 }
 
 #players,
 #player_scores {
-  display: $flexible;
+  display: flex;
   flex-direction: row;
   justify-content: center;
-}
+}/*# sourceMappingURL=style.css.map */
