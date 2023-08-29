@@ -1,0 +1,71 @@
+  @import "utilities";
+  @import "config";
+  @import "btnConfig";
+
+h1 {
+  text-align: center;
+  font: $header_style;
+}
+
+div {
+  text-align: center;
+}
+
+
+button {
+  margin: 10px;
+}
+
+#results,
+#scores {
+  border: 2px;
+  background-color: $background_color;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.image-button {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: $background_color;
+  color: $color_white;
+  padding: $image_button_padding;
+  border: $nothing;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: $box_shadow;
+}
+
+.image-button:hover {
+  background-color: $background_color_hover;
+}
+
+.image-button:active {
+  box-shadow: $nothing;
+}
+
+.image-button img {
+  height: 90px;
+  margin: 2px;
+}
+
+#user,
+#user_score {
+  margin-right: $margin_area;
+  padding-bottom: $padding_area;
+}
+
+#computer,
+#computer_score {
+  margin-left: $margin_area;
+}
+
+#players,
+#player_scores {
+  display: $flexible;
+  flex-direction: row;
+  justify-content: center;
+}
